@@ -8,7 +8,7 @@ Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot
 ```
 
 ## How it works
-This script scrapes the current Astronomy Picture of the Day page for the image linked there, downloads the image, and sets it as your desktop wallpaper for a variety of Linux desktop managers.
+This script scrapes the current [Astronomy Picture of the Day page](https://apod.nasa.gov/apod/astropix.html) for the image linked there, downloads the image, and sets it as your desktop wallpaper for a variety of Linux desktop managers.
 
 ## Supported desktop managers
 The current supported list is as follows:
