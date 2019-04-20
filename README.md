@@ -4,7 +4,7 @@ Script to set your Linux desktop wallpaper to the Astronomy Picture of the Day.
 ## Usage
 Invoke the script on login using a method appropriate to your desktop manager
 ```
-Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot
+Usage: apod gnome1|gnome22|gnome24|gnome3|kde|kde4|fvwm|fvwm-xv|xfce|xfce4|hsetroot
 ```
 
 ## How it works
