@@ -29,7 +29,7 @@ if [ $? -ne 0 ]; then
 else
     # extract the image url from the astropix page
     echo getting image url
-    imgurl=`cat $tmpfile | grep -i "img src" | sed -e 's/.*<img src="\(.*\)".*/\1/i'`
+    imgurl=`cat $tmpfile | grep -i "a.*image/" | sed -e 's/.*<a href="\(.*\)".*/\1/i'`
 
     # get that image file
     echo getting image ${baseurl}${imgurl}
