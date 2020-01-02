@@ -1,10 +1,10 @@
 # apod-desktop
-Script to set your Linux desktop wallpaper to the Astronomy Picture of the Day.
+Script to set your Linux or Windows 10 desktop wallpaper to the Astronomy Picture of the Day.
 
 ## Usage
 Invoke the script on login using a method appropriate to your desktop manager
 ```
-Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot
+Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot|windows
 ```
 
 ## How it works
@@ -19,6 +19,7 @@ The current supported list is as follows:
 * XFCE
 * Enlightenment
 * Generic X11 using hsetroot
+* Windows 10
 
 ## Temporary transition image
 I found that for some desktops, resetting the wallpaper to a new file with the same name did not always refresh. For those desktop managers, I switch to a default temporary image first, then back to the new APOD image. I have provided a sample image with this repository which is a copy of the classic RCA "Indian Head" TV test pattern [Source](https://en.wikipedia.org/wiki/File:RCA_Indian_Head_test_pattern.JPG). This is of course highly insensitive, so feel free to change it to something else you prefer.
