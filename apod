@@ -21,7 +21,7 @@ imgfile=$imgdir/apod.jpg
 
 # attempt to retrieve the astropix page
 echo getting page ${sourceurl}
-wget ${sourceurl} -T 10 -q -O $tmpfile
+curl ${sourceurl} -s -o "$tmpfile"
 
 if [ $? -ne 0 ]; then
     echo "Unable to retrieve page";
@@ -33,7 +33,7 @@ else
 
     # get that image file
     echo getting image ${baseurl}${imgurl}
-    wget ${baseurl}${imgurl} -T 10 -q -O $imgfile
+    curl ${baseurl}${imgurl} -s -o "$imgfile"
     if [ $? -ne 0 ]; then
         echo "Unable to retrieve image"
         exit 2
