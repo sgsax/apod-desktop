@@ -13,7 +13,7 @@ imgdir=$HOME/pics
 tmpimg=$imgdir/rca_indian_head_test_pattern.jpg
 
 # base URL for the APOD website
-baseurl=http://apod.nasa.gov/apod/
+baseurl=https://apod.nasa.gov/apod/
 # base URL plus name of the page where the current picture can be found
 sourceurl=${baseurl}astropix.html
 tmpfile=/tmp/astropix.html
