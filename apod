@@ -110,7 +110,7 @@ else
             winimg=`echo $imgfile | sed -e 's/\/c/C:/i'`
             reg add "HKEY_CURRENT_USER\Control Panel\Desktop" //v Wallpaper //t REG_SZ //d "$winimg" //f
             sleep 5
-            RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters 1, True
+            RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters 1,True
           ;;
           *)
             echo "Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot|windows"
