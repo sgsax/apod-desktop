@@ -1,7 +1,4 @@
-# apod-desktop-kde5
-
-## A fork of [apod-desktop](https://github.com/sgsax/apod-desktop) to add support for KDE Plasma 5.
-
+# apod-desktop
 Script to set your Linux desktop wallpaper to the Astronomy Picture of the Day.
 
 ## Usage
