@@ -34,4 +34,4 @@ There are two tunable settings you will need to adjust for your own environment:
 * Occasionally the APOD image is a video. In this case, either the system default wallpaper or black screen is displayed, depending on your distro and DM.
 
 ### History
-I've been curating this for personal use for nearly 15 years, updating for new versions of DMs as I have switched back and forth over the years. I've always enjoyed it and decided to upload it for the public good.
+I've been curating this for personal use since at least 2007, updating for new versions of DMs as I have switched back and forth over the years. I've always enjoyed it and decided to upload it for the public good.
