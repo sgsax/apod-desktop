@@ -71,6 +71,26 @@ else
             dcop kdesktop KBackgroundIface setWallpaper "" 6
             dcop kdesktop KBackgroundIface setWallpaper $imgfile 6
           ;;
+          "kde5")
+            # for kde plasma, you can comment out the ones you don't want to change
+            
+            # lock screen
+            kwriteconfig5 --file ~/.config/kscreenlockerrc --group Greeter --group Wallpaper --group org.kde.image --group General --key Image $imgfile
+            
+            # desktop
+            qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
+                var allDesktops = desktops();
+                print (allDesktops);
+                for (i=0;i<allDesktops.length;i++) {{
+                    d = allDesktops[i];
+                    d.wallpaperPlugin = "org.kde.image";
+                    d.currentConfigGroup = Array("Wallpaper",
+                                                 "org.kde.image",
+                                                 "General");
+                    d.writeConfig("Image", "'$imgfile'")
+                }}
+            '
+          ;;
           "fvwm")
             #--fvwm section
             # use built-in wallpaper utility
