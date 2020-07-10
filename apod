@@ -9,7 +9,7 @@
 
 ###########################################
 # CHANGE THE FOLLOWING TO SUIT YOUR NEEDS
-imgdir=$HOME/pics
+imgdir=$HOME/Pictures
 tmpimg=$imgdir/rca_indian_head_test_pattern.jpg
 
 # base URL for the APOD website
@@ -126,8 +126,14 @@ else
           "hsetroot")
             hsetroot -fill "$imgfile"
           ;;
+	  "i3wm")
+	    #set wallpaper using feh
+	    feh --bg-fill "$imgfile"
+	    #send message to i3wm to refresh the session with new settings
+	    i3-msg restart
+	  ;;
           *)
-            echo "Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot"
+            echo "Usage: apod gnome1|gnome22|gnome24|gnome3|kde|fvwm|fvwm-xv|xfce|xfce4|hsetroot|i3wm"
           ;;
         esac
     fi
